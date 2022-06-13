@@ -1,0 +1,103 @@
+.rightbar__Container{
+    gap:2.5rem;
+    flex-direction:column;
+    position:relative;
+    height:100vh;
+}
+
+.rightbar__Container>a{
+  
+    color:var(--color-text);
+    background-color: var(--bg-main);
+    /* box-shadow:1px 2px lightgray; */
+    padding: .8rem ;
+    border-radius: 100%;
+    transition:all .2s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightbar__Container a:hover{
+    background-color:var(--bg-text);
+    transform:scale(1.2);
+    color:white;
+}
+.rightbar__Container>.active{
+    background-color:var(--bg-text);
+    color:white;
+    transform:scale(1.2);
+}
+/* theme changer */
+.theme_toogle{
+    position: absolute;
+        top: .2rem;
+}
+
+
+/* ========from here */
+.checkbox {
+    opacity: 0;
+}
+.label {
+    width: 35px;
+    height: 16px;
+    background-color: var(--color-sec);
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.5);
+}
+
+.ball {
+    width: 12px;
+    height: 12px;
+    background-color:white;
+    position: absolute;
+    top: 1.7px;
+    left: 2.8px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked+.label .ball {
+    transform:  translateX(18px);
+}
+.fa-moon {
+    color: var(--color-white);
+    font-size:.6rem;
+
+}
+.fas{
+    padding: 0.3rem 0rem;
+}
+.fa-sun {
+    color: white;
+    font-size:.6rem;
+}
+@media only screen and (max-width: 1200px) {
+    .rightbar__Container{
+        gap:1rem;
+        flex-direction:row;
+        height:2rem;
+
+    }
+    .rightbar__Container>a{
+ 
+        padding: .4rem ;
+
+    }
+    .theme_toogle{
+        position: fixed;
+            top: 0rem;
+            right:2rem;
+    
+    }
+    
+}
+
+

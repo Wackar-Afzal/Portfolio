@@ -1,0 +1,57 @@
+.leftbar__header{
+    gap:.8rem;
+    background-color:var(--bg-light);
+}
+.img__Controller{
+    width:10rem;
+    height:10rem;
+    border-radius:100%;
+    overflow:hidden;
+    background-color:var(--bg-main)
+}
+
+
+.SMicons{
+    background-color:var(--bg-text);
+    padding:.2rem;
+    border-radius:100%;
+    flex-wrap:no-wrap;
+    margin:.3rem;
+    color:white;
+    border:1px solid var(--bg-text) ;
+}
+.SMicons:hover{
+    background-color:var(--bg-transparent);
+    color:var(--bg-text);
+    border:1px solid gray;
+    box-shadow:1px 1px 3px 3px lightgray;
+
+
+}
+.personalInfo{
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+    padding: 1rem 0rem;
+}
+.Info{
+    /* overflow: scroll; */
+    height: 25rem;
+    overflow-y: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+.Info::-webkit-scrollbar {
+    display: none;
+}
+.percentageBar{
+    margin-top: .2rem;
+    border:1px solid var(--bg-text);
+    border-radius: 1rem;
+    padding: .1rem;
+    display: flex;
+}
+.percentageBar>span{
+    background-color:var(--bg-text);
+    height: 3px;
+}

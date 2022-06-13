@@ -1,0 +1,32 @@
+.edu__header{
+    gap:2rem;
+    margin:6rem 1rem 3rem 1rem;
+}
+.section__Education {
+    padding:0rem 1.5rem;
+}
+.section__Education h5{
+    margin: 0rem 0rem 1rem 0rem;
+}
+.article__edu{
+    display: flex;
+    padding: 1rem 0rem;
+    gap:2rem;
+    padding: 2rem 0rem;
+}
+.article__edu__Right{
+    padding: .3rem;
+}
+.article__edu__left{
+    padding: .3rem;
+    flex:3;
+}
+.article__edu__Right {
+    flex:1.2;
+}
+.article__edu__Right div{
+    display: flex;
+    justify-content: space-between;
+    /* gap:1rem; */
+    /* align-items: center; */
+}
