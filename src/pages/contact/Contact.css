@@ -10,7 +10,7 @@
 }
 .section__article{
   width:45%;
- 
+
 }
 
 .form__article,.info__article{
@@ -57,6 +57,7 @@
   margin-top: 1rem;
   text-align: center;
     font-weight: lighter;
+    color: var(--color-text);
     resize: vertical;
 }
 
@@ -69,16 +70,16 @@
 .contact__info>a{
     color: var(--color-sec);
     text-decoration: none;
-} 
+}
 @media only screen and (max-width: 1050px) {
 .section__article{
   width:70%;
- 
+
 }
 }
 @media only screen and (max-width: 700px) {
   .section__article{
     width:90%;
-   
+
   }
   }

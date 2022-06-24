@@ -36,7 +36,7 @@
 }
 .Info{
     /* overflow: scroll; */
-    height: 45%;
+    height: 50%;
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -54,4 +54,11 @@
 .percentageBar>span{
     background-color:var(--bg-text);
     height: 3px;
+}
+@media only screen and (max-width: 600px) {
+    .Info{
+        /* overflow: scroll; */
+        height: 37%;
+
+    }
 }
