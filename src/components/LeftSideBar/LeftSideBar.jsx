@@ -17,23 +17,22 @@ const LeftSideBar = () => {
  
 
   let size={fontSize:"1rem",transition:"all .2s"}
-  let components=[,<Skill/>]
 
-  
+    
   return (
     <>
    
        <header className="leftbar__header centerFlexV b-Shadow">
       <div className='img__Controller'>
-        <img className="img" src={require("./waqarDp.png")}/>
+        <img className="img" src={require("./waqarDp.png")} alt="img"/>
       </div>
       <span className='dot'></span>
       <h3>Waqar Afzal</h3>
       <h5 className='color-text'>Full Stack Developer</h5>
       <div className="socialmediaIcon centerFlexH ">
-        <a href="#" target="_blank" className='SMicons centerFlexH'><InstagramIcon sx={size}/></a>
-        <a href="#" target="_blank" className='SMicons centerFlexH'><FacebookIcon sx={size}/></a>
-        <a href="#" target="_blank" className='SMicons centerFlexH'><WhatsApp sx={size}/></a>
+        <a href="http://www.instagram.com/rai.waqar.56" target="_blank" rel="noreferrer noopener" className='SMicons centerFlexH'><InstagramIcon sx={size}/></a>
+        <a href="http://www.facebook.com/rai.waqar.56" target="_blank"rel="noreferrer noopener"  className='SMicons centerFlexH'><FacebookIcon sx={size}/></a>
+        <a     href="https://wa.me/+923324166964" target="_blank" rel="noopener noreferrer" className='SMicons centerFlexH'><WhatsApp sx={size}/></a>
       </div>
     </header>
     <section className='Info'>

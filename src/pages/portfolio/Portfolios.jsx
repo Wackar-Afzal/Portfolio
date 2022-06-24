@@ -5,23 +5,22 @@ const Portfolio = () => {
 
   const data=[{
     id:1,
-    name:'This is a portfolio item title',
-    image: 'https://nofil.site/static/media/portfolio2.441a628dadddbe81a6b4.png',
-    githubLink:'nofil.netlify.app',
-    viewProject:'nofil.netlify.app',
+    name:'DashBoard with multiple Graphs',
+    image: require('./ProjectImgs/foriDashBoard.png'),
+    githubLink:'https://github.com/Wackar-Afzal/Dashboard',
+    viewProject:'https://foridashboarddemo.netlify.app',
+  },{
+    id:3,
+    name:'Website for a tech company',
+    image: require('./ProjectImgs/fori.png'),
+    githubLink:'https://fori.netlify.app/',
+    viewProject:'https://fori.netlify.app/',
   },{
     id:2,
-    name:'This is a portfolio item title',
-    image: 'https://nofil.site/static/media/portfolio2.441a628dadddbe81a6b4.png',
-    githubLink:'nofil.netlify.app',
-    viewProject:'nofil.netlify.app',
-  },
-{
-    id:3,
-    name:'This is a portfolio item title',
-    image: 'https://nofil.site/static/media/portfolio2.441a628dadddbe81a6b4.png',
-    githubLink:'nofil.netlify.app',
-    viewProject:'nofil.netlify.app',
+    name:'Goal Settler App for Multiple Users',
+    image: require('./ProjectImgs/dash.png'),
+    githubLink:'https://github.com/Wackar-Afzal/MERN-Stack-Project',
+    viewProject:'https://goalsettler.herokuapp.com/',
   },
 {
     id:4,
@@ -53,7 +52,7 @@ const Portfolio = () => {
   <section id='portfolio'>
     <div className='edu__header centerFlexV'>
       <h1 className=''>Portfolio</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, adipisci quidem odio vitae reiciendis cupiditate quod repellat sed magni, quibusdam voluptatem pariatur nobis sint ex vero voluptas. Facere, magni voluptas.</p>
+      <p>My projects</p>
       </div>
     <div className="container portfolio__container">
     {data.map((obj)=>{
@@ -72,7 +71,7 @@ const Portfolio = () => {
       </article>
       )
     })}
-      
+
     </div>
   </section>
   )

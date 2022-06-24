@@ -25,7 +25,7 @@ function App() {
     handleResize();
 
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [setScreenSize]);
 
   useEffect(() => {
     if (screenSize >= 1200) {
@@ -33,7 +33,7 @@ function App() {
     } else {
       setActiveMenu(false);
     }
-  }, [screenSize]);
+  }, [screenSize,setActiveMenu]);
 
 
 
@@ -41,7 +41,7 @@ function App() {
     <>
     <Router>
       <main className="App bg-main">
-      
+
       <button onClick={()=>setActiveMenu(!activeMenu)}className='hamberger'>{!activeMenu?<InfoTwoToneIcon />:<CancelOutlinedIcon />}</button>
         {
          activeMenu?<>
@@ -60,7 +60,7 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
           </Routes>
           <footer className='bg-text'>
-            CopyRight@reserved
+            @CopyRight reserved
          </footer>
          <div className='empty__span' ></div>
         </section>
@@ -68,14 +68,14 @@ function App() {
         <nav className='rightbar bg-light c-Shadow'>
           <RightSideBar/>
         </nav>
-      
-     
+
+
       </main>
-      </Router> 
+      </Router>
 
 
     </>
-    
+
   );
 }
 

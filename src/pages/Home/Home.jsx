@@ -1,5 +1,5 @@
-import React,{useEffect,useState} from "react";
 
+import {Link} from "react-router-dom";
 
 // import css..........
 import "./Home.css";
@@ -28,13 +28,13 @@ const Home = () => {
           <div></div>
           <div></div>
           </div>
-          <div className="flex1 home__header__p">
+          <div className=" home__header__p">
             <h1><b>I’m Waqar Afzal<br/><p className="dancing__text  "><span>Front-End <d>Developer</d></span><span>Full-Stack <d>Developer</d></span><span>Backend <d>Developer</d></span></p> </b></h1>
             <p>I build interactive websites that run across platforms & devices.</p>
-             <button className="btn">Hire Me</button>
+             <button className="btn"><Link className="Link" to="/contact" >Hire Me</Link></button>
             </div>
           <div className="centerFlexH " >
-             <img className='home__Header__img' src={require('../../components/LeftSideBar/waqarDp.png')}/>
+             <img className='home__Header__img' src={require('../../components/LeftSideBar/waqarDp.png')} alt="img"/>
           </div>
         </header>
 
@@ -65,12 +65,11 @@ const Home = () => {
 
         {/* ...............saction2..................... */}
 
-        <section className="Home__section2 bg-light">
+         <section className="Home__section2 bg-light">
           <center><h2 className="bg-text" style={{color:"white"}}>My Bio</h2></center>
           <div >
-              <img className="Home__section2__img"src={require("./imgs/bio.png")}/>
-            <div>
-            <p className=" color-text text-justify">
+              <img className="Home__section2__img"src={require("./imgs/bio.png")} alt="img"/>
+            <p style={{padding:"3rem"}} className=" color-text text-justify">
               <i style={{color:"var(--color-sec)"}}><b>bio</b></i> <br/>
               I'm a Full Stack web developer based in Islamabad, Pakistan. With a speciality in Front End Development. I possess a vast array of knowledge in many different front end and back end languages, responsive frameworks and databases management syatems. My objective is simply to be the best web developer that I can be and to contribute to the technology industry.
               <br/>
@@ -82,12 +81,17 @@ const Home = () => {
               <br/>
               <i style={{color:"var(--color-sec)"}}><b>/bio</b></i>
             </p>
-            </div>
           </div>
-        </section>
+        </section> 
 
         {/* ............................section3.................... */}
+    <section className=" section__3 ">
+     
         <Slider/>
+        
+    </section>
+
+ 
        
       </>
   )
@@ -97,19 +101,19 @@ export default Home
 
 export const Slider=()=>{
   return(
-    <section className=" section__3 bg-light">
+    <>
     <center><h2 className="bg-text"style={{color:"white" }}>Technology Used</h2></center>
-  <marquee scrollamount="10" behavior="alternate" width="100%">
-    <div>
+    <div className="marquee__container">
+    <div className="marquee">
     {logos.map((logo,index)=>{
       return(
-       
-          <img style={{width:"auto",height:"8rem",margin:"2rem 2rem "}}className="img" src={require(`./imgs/${logo}`)}/>
-   
+        <div className="marquee_img">
+          <img key={index} alt="img" style={{width:"auto",height:"8rem",margin:"2rem 2rem "}} src={require(`./imgs/${logo}`)}/>
+          </div>
       )
     })}
     </div>
-    </marquee>
-  </section>
+    </div>
+    </>
   )
 }

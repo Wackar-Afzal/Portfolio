@@ -14,12 +14,12 @@ import {BsSunFill} from 'react-icons/bs'
 import {IoMdMoon} from 'react-icons/io'
 // import css
 import "./rightbar.css"
-
+ 
 
 
 const RightBar = () => {
 
-  const [toogleTheme, setToogleTheme] = useState(true);
+  const [toogleTheme, setToogleTheme] = useState(false);
 
   const lightTheme = {
     "--color-primary":"rgb(43, 43, 43)",
@@ -48,14 +48,12 @@ const RightBar = () => {
     if(toogleTheme===false){
         Object.keys(lightTheme).forEach(key => {
         const value = lightTheme[key];
-        console.log(value)
         document.documentElement.style.setProperty(key, value);
         setToogleTheme(!toogleTheme)
     });
     }else {
         Object.keys(darkTheme).forEach(key => {
         const value = darkTheme[key];
-        console.log(value)
         document.documentElement.style.setProperty(key, value);
         setToogleTheme(!toogleTheme)
     })

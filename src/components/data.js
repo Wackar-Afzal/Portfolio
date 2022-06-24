@@ -22,9 +22,9 @@ export  const extraskills=[
 export const logos=["html.png","css.png","js.png","node.png","express.png","react.png","mongodb.png","npm.png","git.png","bootstrap.png","tailwind.png","synfusion.png"]
 
 export  const educationD=[
-    {institute:"Pak Garrison College, Nankan Sahib",status:"Student",duration:"Aug 15- June 17",degreeTitle:"FSC(pre engineering)",summary:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus incidunt officia iusto in inventore dolorem!"},
-    {institute:"Ghulam Ishaq Khan Institue of engineering sciences and technology",status:"Student",duration:"Aug 17- June 21",degreeTitle:"Electronic Engineering",summary:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus incidunt officia iusto in inventore dolorem!"},
-    {institute:"Udemy",status:"Student",duration:"Nov 21 - jan 22",degreeTitle:"Web Development",summary:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus incidunt officia iusto in inventore dolorem!"} 
+    {institute:"Pak Garrison College, Nankan Sahib",status:"Student",duration:"Aug 15- June 17",degreeTitle:"FSC(pre engineering)"},
+    {institute:"Ghulam Ishaq Khan Institue of engineering sciences and technology",status:"Student",duration:"Aug 17- June 21",degreeTitle:"Electronic Engineering"},
+    {institute:"Udemy",status:"Self learner",duration:"Nov 21 - jan 22",degreeTitle:"Web Development"}
   ]
 
   export const skillsPageD=[

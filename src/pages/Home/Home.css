@@ -3,6 +3,7 @@
     height:25rem;
     overflow: hidden;
     position: relative;
+    justify-content:space-between;
 }
 .home__header__p{
 z-index: 10;
@@ -78,6 +79,12 @@ z-index: 10;
     border:1px solid red;
     animation-delay: 10s;
 }
+.Link{
+    color:white;
+}
+.Link:hover{
+    color:var(--color-sec);
+}
 .home__Header__img{
     width:18rem;
     height:23rem;
@@ -150,12 +157,31 @@ z-index: 10;
 .Home__section2__img{
 width:25rem;
 float:right;
-display:static;
+display:inline-block;
 }
 /* section 3.............................. */
 .section__3 {
-    margin:1rem 3rem;
-    height:auto;
+    width:100%;
+    padding:1rem 0rem;
+
+}
+.marquee__container{
+    /* margin:1rem 0rem; */
+    overflow-x:hidden;
+
+    
+}
+
+.marquee{
+    animation: marquee 35s linear infinite;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+@keyframes marquee{
+    0%{transform: translateX(100%);}
+    50%{transform: translateX(-250%);}
+    100%{transform: translateX(100%);}
 }
 @media only screen and (max-width: 700px) {
     .home__Header__img{
@@ -164,11 +190,14 @@ display:static;
     .Home__section2__img{
         display:none;
         }
-        .section__3 {
-            margin:1rem 1rem;
-        }
-        .section__3 {
-            margin:1rem 1rem;
-            height:auto;
-        }
+
+   
 }
+@media only screen and (max-width: 1200px) {
+    .section__3 {
+        width:100vw;
+        /* margin:1rem 0rem; */
+    
+    }
+}
+

@@ -13,9 +13,9 @@ import "./Contact.css";
             message:""
         });
         const [received, setReceived]=useState(false)
-        
+
         function message(e){
-    
+
             const inputName=e.target.name;
             const inputValue=e.target.value;
             setInput({...input,[inputName]:inputValue})
@@ -27,13 +27,13 @@ import "./Contact.css";
         e.preventDefault();
         if(input.name && input.email && input.subject && input.message){
             emailjs.sendForm('service_ql6p0wf', 'template_08e65lt', form.current, 'VKCZr65xbijix7UHx')
-                   
+
             setInput({
                 name:"",
                 email:"",
                 subject:"",
                 message:""})
-            
+
             setReceived(true)
         }
         }
@@ -42,7 +42,7 @@ import "./Contact.css";
         <div className='contact'>
         <header className="centerFlexV edu__header">
         <h1>Get in touch</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas explicabo ipsum impedit fuga voluptatibus accusantium odit corporis ducimus atque temporibus!</p>
+        <p>Contact me throught following given details or directly convey me a message</p>
         </header>
 
         <section className='bg-main Contact__section'>
@@ -74,7 +74,7 @@ import "./Contact.css";
             </div>
         </article>
             </div>
-       
+
       </section>
       </div>
     )

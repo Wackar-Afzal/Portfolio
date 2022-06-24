@@ -36,9 +36,9 @@
 }
 .Info{
     /* overflow: scroll; */
-    height: 25rem;
+    height: 45%;
     overflow-y: scroll;
-    scrollbar-width: none; 
+    scrollbar-width: none;
     -ms-overflow-style: none;
 }
 .Info::-webkit-scrollbar {
